@@ -1,0 +1,71 @@
+### read all users
+GET http://localhost:4000/user-api/user
+
+### read user by id
+GET http://localhost:4000/user-api/user/697dbaf689c2bad9a78ea119
+
+### create a new user
+POST http://localhost:4000/user-api/user
+Content-Type: application/json
+
+{
+     "username":"shiva",
+     "password":"shiva123",
+     "age":22
+}
+
+### update user
+PUT http://localhost:4000/user-api/user/697dbfc1da8a7239af777c08
+Content-Type: application/json
+
+{
+     "username":"shiva",
+     "password":"shiva123",
+     "age":18
+
+}
+### deleted user
+DELETE  http://localhost:4000/user-api/user/697dbfc1da8a7239af777c08
+
+### User authentication(login) req
+POST http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+     "username":"shiva",
+     "password":"shiva123"
+}
+
+###req for procted route
+GET http://localhost:4000/user-api/test
+
+
+
+###product GET
+GET  http://localhost:4000/product-api/product 
+
+###product post
+POST http://localhost:4000/product-api/product
+Content-Type: application/json
+
+{
+     "name":"Phone",
+     "price":30000,
+     "brand":"Redmi"
+}
+
+###get by id
+GET http://localhost:4000/product-api/product/697dd119a63d6ad8fca75fbc
+
+###update product
+PUT http://localhost:4000/product-api/product/697dd119a63d6ad8fca75fbc
+Content-Type: application/json
+
+{
+     "name":"Laptop",
+     "price":50000,
+     "brand":"Dell"
+}
+
+###delete product
+DELETE http://localhost:4000/product-api/product/697dd119a63d6ad8fca75fbc
