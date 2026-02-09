@@ -43,7 +43,7 @@ let users=[];
     //read user by id
     userApp.get('/users/:id',(req,res)=>{
 
-        console.log(req.params);
+        //console.log(req.params);
         //read id from url parameter
         let userId=Number(req.params.id )//return an object {id:100}
         //read user by this id
